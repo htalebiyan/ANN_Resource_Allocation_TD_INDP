@@ -3,20 +3,23 @@
     <option name="myName" value="Project Default" />
     <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <Languages>
-        <language minSize="70" name="Python" />
+        <language minSize="2013" name="Python" />
       </Languages>
     </inspection_tool>
-    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
-      <option name="ignoredErrors">
-        <list>
-          <option value="N806" />
-        </list>
-      </option>
-    </inspection_tool>
+    <inspection_tool class="ProblematicWhitespace" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredIdentifiers">
         <list>
-          <option value="docs.papers.lumberton_decision.codes.main.max_iteration" />
+          <option value="string.split" />
+          <option value="typing.Iterable.__getitem__" />
+          <option value="typing.Iterable.nodes" />
+          <option value="networkx.classes.digraph.DiGraph.G" />
+          <option value="networkx.classes.digraph.DiGraph.node" />
+          <option value="string.strip" />
+          <option value="networkx.classes.digraph.DiGraph.get_clusters" />
+          <option value="networkx.classes.digraph.DiGraph.gc_size" />
+          <option value="typing.Iterable.num_components" />
+          <option value="typing.Iterable.gc_size" />
         </list>
       </option>
     </inspection_tool>
