@@ -1,9 +1,9 @@
-# Deep Learning-based Resource Allocation for Infrastructure Resilience
+# Artificial Neural Networks for efficent fast resource allocation to enhance infrastructure resilience 
 
 
 In this repository, we provide the details of the implementation of the following manuscript: <br> <br>
 
-### [Deep Learning-based Resource Allocation for Infrastructure Resilience](https://arxiv.org/abs/2007.05880)
+### [Resource Allocation for Infrastructure Resilience using Artificial Neural Networks](https://ieeexplore.ieee.org/document/9288193)
 
 Siavash Alemzadeh, Hesam Talebiyan, Shahriar Talebi, Leonardo Due&#241;as-Osorio, Mehran Mesbahi <br> <br>
 
