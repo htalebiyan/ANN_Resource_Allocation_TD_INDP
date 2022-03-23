@@ -1,5 +1,4 @@
 import tensorflow as tf
-import numpy as np
 
 # Initialization #################################
 load_train_data = 0
@@ -24,7 +23,6 @@ tf.random.set_seed(2)
 # Load Data ####################################
 if load_train_data:
     from data_loader import load
-
     # "X" and "Y" are Nxn matrices where "N" is the number of scenarios and "n" is the number of nodes. Each row of
     # "X" is a binary vector which has a "0" when the node damaged and "1" when the node is repaired. Each element
     # of "Y" gives the time-step at which the node is repaired and "0" if the node is not damaged.
@@ -35,7 +33,6 @@ if load_train_data:
 
 if load_test_data:
     from data_loader import load
-
     DATA = load(horizon=21, num_nodes=125, num_layers=3, num_rsc=7)
     X_test, y_test = DATA.read_test(mags=[7], num_scenario=1000)
     X_test = 1 - X_test  # Now "0" implies a repaired node, "1" implies damaged node
@@ -44,7 +41,6 @@ if load_test_data:
 # Train Neural Network #############################
 if train_NN:
     from train_NN_modified import Trainer
-
     trainer = Trainer(X_train, y_train, num_epoch=1000, num_train=9000, learning_rate=0.01, batch_size=32)
     model = trainer.train()  # The output model contains all features and parameters of the Neural Network
     print("\nModel was successfully trained!\n")
@@ -57,7 +53,6 @@ if rsc_allocation:
 
     max_true = []
     max_learned = []
-
     for i in range(2, 8):
         print(f"\nResource No. {i} Loading...\n")
         # Read train data
